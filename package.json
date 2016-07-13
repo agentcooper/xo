@@ -6,7 +6,7 @@
   "scripts": {
     "start": "open index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/index.js -t babelify -o dist/bundle.js",
+    "build": "mkdir -p dist; browserify src/index.js -t babelify -o dist/bundle.js",
     "watch": "watchify src/index.js -t babelify -o dist/bundle.js --verbose"
   },
   "author": "Artem Tyurin <artem.tyurin@gmail.com>",
